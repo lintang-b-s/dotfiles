@@ -147,3 +147,12 @@ if [ -f '/home/lintangbs/google-cloud-sdk/path.zsh.inc' ]; then . '/home/lintang
 if [ -f '/home/lintangbs/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/lintangbs/google-cloud-sdk/completion.zsh.inc'; fi
 export PATH=$PATH:/home/lintangbs/KaHIP/deploy
 export PATH="$PATH:/home/$USER/.local/bin"
+
+
+
+
+lock() {
+    systemctl suspend
+}
+
+source /usr/share/nvm/init-nvm.sh
