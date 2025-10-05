@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+echo " pomatez"
+
+if [ "$BLOCK_BUTTON" = 1 ]; then
+    if ! pgrep -x "pomatez" >/dev/null; then
+        setsid ~/.config/scripts/pomatez_launch.sh  >/dev/null 2>&1 &
+    else
+
+        i3-msg workspace "4:pomatez"
+    fi
+fi
